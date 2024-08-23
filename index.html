@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Coca Cola Landing Page</title>
+
+    <!-- bootstrap 5.0.3 style link -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- custom style link -->
+
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <!-- slick slider style link -->
+    <link rel="stylesheet" href="assets/slick/slick.css" />
+    <link rel="stylesheet" href="assets/slick/slick-theme.css" />
+  </head>
+  <body>
+    <!-- banner start  -->
+    <div class="banner_slider">
+      <ul class="px-0 sliding_banner">
+        <li>
+          <img src="assets/banner/banner_1.png" alt="banner 1" class="w-100" />
+        </li>
+
+        <li>
+          <img src="assets/banner/banner_3.png" alt="banner 3" class="w-100" />
+        </li>
+        <li>
+          <img src="assets/banner/banner_2.png" alt="banner 2" class="w-100" />
+        </li>
+      </ul>
+    </div>
+    <!-- banner End -->
+
+    <!-- script start for sliding banner -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="assets/slick/slick.js"></script>
+    <script>
+      $(".sliding_banner").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+              slidesToShow: 1,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: false,
+              slidesToShow: 1,
+            },
+          },
+        ],
+      });
+    </script>
+  </body>
+</html>
